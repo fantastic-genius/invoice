@@ -1,0 +1,566 @@
+@charset "utf-8";
+/* CSS Document */
+a, a:hover{
+	text-decoration: none;
+}
+
+h3{
+	font-family: Baloo Tammudu;
+	padding-top: 10px;
+}
+
+input[type=text], input[type=email], input[type=number], input[type=date], #notes-container textarea, #terms-container textarea, .custom-select{
+	background-color:rgb(238, 247, 251);
+	border-color:#003;
+	color:#090;
+}
+
+.form-control{
+	display: inline-block
+}
+.logo-menu{
+	width: 50px;
+	height: 50px;
+	z-index: 20;
+	border-radius: 50%;
+	top:50px;
+	background-image:url(images/logo.png);
+	background-size:contain;
+	background-repeat:no-repeat;
+	cursor: pointer;
+	
+
+}
+.logo-stick{
+	text-align:right;
+	margin-top: 20px;
+	position: fixed;
+	z-index: 40;
+}
+.logo-position-change1{
+	margin-right: 120px;
+}
+.logo-position-change2{
+	margin-right: 20px;
+}
+#invoice-container{
+	width: 100vw;
+	margin-top: 50px;
+	position:absolute;
+	border: 1px solid #0F3;
+	
+}
+#invoice{
+	
+	
+}
+.con-border{
+	border: 1px solid;
+	height: auto;
+}
+
+.logo-container{
+	width: 100px;
+	margin-top: 20px;
+	
+}
+#logo-id{
+	display: none;
+}
+.span-con{
+	width: 100px;
+	height: 80px;
+	border: 1px solid;
+	cursor: pointer;
+	text-align:center;
+}
+#user-details{
+	text-align: right;
+}
+#user-details input{
+	margin-top: 10px;
+	width: 40%;
+}
+
+
+
+.box-container{
+	border-bottom: 3px solid;
+	border-top: 3px solid;
+	text-align:center;
+	margin-top: 20px;
+	border-color:#060;
+}
+
+.client-invoice{
+	text-align: right;
+}
+.client-details input{
+	margin-top: 10px;
+	width: 40%;
+}
+
+.client-invoice label{
+	margin-right: 20px;
+	
+}
+
+.client-invoice input{
+	margin-top: 10px;
+	width: 40%;
+	
+}
+
+#item-table{
+	margin-top: 50px;
+	width: 100%;
+
+}
+
+#item-header{
+	background-color:#003;
+	color:#FFF;	
+}
+
+.highlighted{
+	background-color:#CCC;
+}
+#alt-amount{
+	display: none;
+}
+
+#item-table button{
+	margin-top: 20px;
+}
+
+.client-invoice2{
+	margin-left: 50%;
+	margin-top: 20px;
+	text-align:right;
+}
+
+.client-invoice2 input, .client-invoice2 p{
+
+	margin-top: 10px;
+}
+.client-invoice2 .total-val{
+	text-align: left;
+}
+
+.client-invoice2 label{
+	/* margin-right: 10px; */
+}
+
+textarea{
+	overflow:hidden;
+	vertical-align: middle;
+}
+
+#notes-container{
+	margin-top: 50px;
+}
+
+#logo-box{
+	margin-top: 20px;
+	margin-left: 20px;
+	width: 120px;
+	height: 100px;
+	background-image:url(images/logo.png);
+	background-size:contain;
+	background-repeat:no-repeat;
+}
+#display-panel{
+	/*display: none;*/
+}
+
+#display-panel p{
+	margin: 10px 0 0 30px;
+}
+
+
+#send{
+	margin-top: 20px;
+}
+#send input{
+	margin-top: 10px;
+}
+
+#send input.btn{
+	margin-left: 20%;
+	width: 60%;
+}
+
+.invoice-line{
+	margin-top:0px; 
+	border-top:3px solid; 
+	width: 200px;
+}
+
+#discount{
+	margin-top: 20px;;
+}
+
+
+
+/* Slider Switch */
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 24px;
+}
+
+.switch input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(16px);
+  -ms-transform: translateX(16px);
+  transform: translateX(16px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 24px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+@media only screen and (min-width: 748px) and (max-width: 1155px) {
+	.invoice-line{ 
+		width: 100px;
+	}
+	#send input.btn{
+		margin-left: 5px;
+		width: 90%;
+	}
+}
+
+@media only screen and (min-width: 767px) and (max-width: 1327px) {
+	/*#display-panel{
+		position:fixed;
+		right: 4.2vw;
+	}*/
+	#invoice{
+		margin-left: 0%;
+	}
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	.client-invoice2{
+		margin-left: 0;
+		text-align:left;
+	}
+	.client-invoice2 input{
+		width: 60%;
+	}
+	#send input.btn{
+		margin-left: 5px;
+		width: 90%;
+	}
+	#display-panel{
+		position:relative;
+		left: 0vw;
+	}
+	
+}
+@media only screen and (max-width: 1000px){
+	#item-header{
+		display: none
+	}
+	
+	#item-box input{
+		margin-top: 10px;
+	}
+ 
+	#alt-amount{
+	display:inline-block;
+}
+}
+
+@media only screen and (max-width: 480px){
+	
+	.client-invoice2{
+		margin-left: 0;
+		text-align:left;
+	}
+	.client-invoice2 input{
+		width: 60%;
+	}
+	#send input.btn{
+		margin-left: 0px;
+		width: 100%;
+	}
+	#display-panel{
+		position:relative;
+		left: 0vw;
+	}
+}
+
+@media screen only and (max-width: 360px){
+	.client-invoice2 input{
+		width: 40%;
+	}
+}
+
+
+
+
+/*SCREEN 2 */
+#screen2-container{
+	width: 80vw;
+	margin-left: 10vw;
+	margin-top: 50px;
+	
+}
+
+#option-title{
+	text-align: center;
+	margin-top: 20px
+}
+
+.option-line{
+	border-top: 2px solid;
+	width: 100px;
+	margin-top: 0px;
+}
+
+.screen2-options{
+	margin-top: 20px;
+}
+.screen2-options .col-sm-1 input{
+	margin-top: 8px;
+}
+.screen2-options .col-sm-8 p{
+	text-align: right;
+}
+.screen2-options .col-sm-2 p{
+	margin-left: 50px;
+}
+
+#pay-now-con{
+	margin: 20px 0;
+	text-align:center;
+}
+
+
+
+/*SCREEN 3 */
+
+#screen3-container{
+	width: 80vw;
+	margin-left: 10vw;
+	margin-top: 50px;
+	text-align: center;
+	
+}
+#screen3-container h2{
+	font-family: Concert One;
+}
+#screen3-container h5{
+	font-family: Arima Madurai;
+}
+
+
+
+/*SCREEN 4 */
+#screen4-container{
+	width: 80vw;
+	margin-left: 10vw;
+	margin-top: 50px;
+	
+}
+
+#invoice-status{
+	margin-top: 50px;
+}
+#invoice-status .row .col-sm-3{
+	font-family: Droid Sans;
+	Bitter
+}
+#invoice-status .row .col-sm-9{
+	font-family: Bitter;
+}
+#invoice-status .row .col-sm-12{
+	margin-top:20px;
+	text-align: center;
+}
+#invoice-status .row .col-sm-12 p{
+	font-family: Arvo;
+}
+
+.line-separator{
+	margin: 50px 0 20px 0;
+	border: 1px solid #060;
+}
+#invoice-summary h3{
+	text-align:center;
+	margin-bottom: 20px;
+}
+#invoice-summary .col-sm-10{
+	text-align:center;
+	border: 1px solid;
+	height: auto;
+	width: 100%;
+	margin-left: 7%;
+	margin-bottom: 20px;	
+}
+
+
+
+
+
+
+
+
+/*SIDE BAR*/
+
+
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fafafa;
+}
+
+
+.navbar {
+    padding: 15px 10px;
+    background: rgb(238, 247, 251);
+    border: none;
+    border-radius: 0;
+    margin-bottom: 40px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-btn {
+    box-shadow: none;
+    outline: none !important;
+    border: none;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #ddd;
+    margin: 40px 0;
+}
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+.wrapper {
+    display: flex;
+    align-items: stretch;
+	margin: 50px 50px;
+}
+
+#sidebar {
+    min-width: 250px;
+    background: rgb(238, 247, 251);
+    transition: all 0.3s;
+	padding: 10px;
+	
+}
+
+#sidebar.active {
+	display: none;
+    
+}
+
+#side-two{
+	position: fixed;
+	right: 0px;
+	z-index: 20;
+}
+#side-one{
+	position: absolute;
+	
+}
+.position-one{
+	right: 22vw;
+}
+
+.position-two{
+	right: 10px;
+}
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+#content {
+    padding: 20px;
+    min-height: 100vh;
+    transition: all 0.3s;
+	z-index: 5;
+}
+
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+@media only screen and (max-width: 768px) {
+    #sidebar {
+		display:none;
+		
+       
+		
+    }
+    #sidebar.active {
+		display:block;
+        
+    }
+    
+}
+@media only screen and (min-width: 748px) and (max-width: 1155px) {
+	.position-one{
+		right: 20vw;
+	}
+}
+
+@media only screen and (min-width: 480px) and (max-width: 748px) {
+	.position-one{
+		right: 10px;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.logo-stick{
+		margin-right: 20px;
+	}
+	.position-one{
+		right: 20px;
+	}
+	
